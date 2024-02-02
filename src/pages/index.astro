@@ -1,10 +1,25 @@
 ---
+import ExperienceList from '../components/ExperienceList.astro';
+import Profile from '../components/Profile.astro';
+import SocialNetworks from '../components/Contacts.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import TecnologieList from '../components/TecnologieList.astro';
+import ProjectList from '../components/ProjectList.astro';
 ---
 
 <Layout 
-	title="Hey, Soy Roy Chavarría"
-	description="Ingeniero en computación, Desarrollador full stack"
-	>
+
+	title="Portfolio Roy"
+	description="Roy Information"
+>
+	
+	<main class="px-4 items-center">
+		<Profile />
+		<SocialNetworks />
+		<ExperienceList />
+		<ProjectList></ProjectList>
+		<TecnologieList />
+		<h2 class="text-3xl font-bold mt-10">About Me</h2>
+	</main> 
 </Layout>
+ 

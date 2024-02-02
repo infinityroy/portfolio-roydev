@@ -1,6 +1,7 @@
 
 ---
 import Header from '../components/Header.astro';
+import ThemeIcon from '../components/ThemeIcon.astro';
 import '@fontsource/ubuntu-mono';
 
 interface Props {
@@ -22,14 +23,13 @@ const {description,  title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div>
-			<Header />
-		</div>
+		<ThemeIcon/>
+		<slot />
 	</body>
 </html>
 <style is:global>
 	:root {
-		color-scheme: light dark;
+		
 	}
 	html {
 		font-family: 'Ubuntu Mono', sans-serif;
@@ -41,4 +41,16 @@ const {description,  title } = Astro.props;
 		flex-direction: column;
 		align-items: center; 
 	}
+
+
+	/* Darkmode CSS Style */
+	html.dark {
+		background-color: #121212;
+		color: #fff;
+	}
+	.dark .nav-links a {
+		color: #fff;
+	}
+
+
 </style>
