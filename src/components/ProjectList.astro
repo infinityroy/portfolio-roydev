@@ -8,14 +8,17 @@ import AppMobileIcon from "./icons/ProjectsIcons/AppMobileIcon.astro";
 
 <section>
     <h1 class="text-3xl font-bold mt-10">Projects</h1>
-    <div class="container px-5 py-24 mx-auto">
-        <Project
-            name={"Asada Santiago Sur"} 
-            description={"The application to record, verify, and upload monthly water measurements for the customers of the water utility (ASADA)."} 
-            tecnologies={['Flutter', 'MySql', 'VsCode', 'GitHub']}
-            codeLink={'https://github.com/miroydev/Proyectos-Universitarios/tree/main/Proyecto-Asada-Santiago-Sur'}
-            >
-            <AppMobileIcon />
-        </Project>
-    </div>
+    <ul class="container px-5 py-24 mx-auto">
+        <li>
+            <Project
+                name={"Asada Santiago Sur"} 
+                description={"The application to record, verify, and upload monthly water measurements for the customers of the water utility (ASADA)."} 
+                tecnologies={['Flutter', 'MySql', 'VsCode', 'GitHub']}
+                codeLink={'https://github.com/miroydev/Proyectos-Universitarios/tree/main/Proyecto-Asada-Santiago-Sur'}
+                link=""
+                >
+                <AppMobileIcon slot="project-image" />
+            </Project>
+        </li>
+    </ul>
 </section>
