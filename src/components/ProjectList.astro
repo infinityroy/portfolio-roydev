@@ -1,14 +1,21 @@
 ---
 import Project from "./Project.astro";
-import AppMobileIcon from "./icons/ProjectsIcons/AppMobileIcon.astro";
+import WorkExperience from "./icons/experience_icons/WorkExperience.astro";
+import AppMobileIcon from "./icons/projects_icons/AppMobileIcon.astro";
+
 
 
 ---
 
 
-<section>
-    <h1 class="text-3xl font-bold mt-10">Projects</h1>
-    <ul class="container px-5 py-24 mx-auto">
+<section class="mt-20">
+    
+    <div class="flex items-end">
+        <WorkExperience />
+        <h1 class="text-3xl font-bold ml-4">Projects</h1>
+    </div>
+    
+    <ul class="container px-5 mt-6 mx-auto">
         <li>
             <Project
                 name={"Asada Santiago Sur"} 

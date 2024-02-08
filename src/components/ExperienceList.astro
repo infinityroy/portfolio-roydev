@@ -1,19 +1,20 @@
 
 ---
 import Experience from "./Experience.astro";
+import WorkExperience from "./icons/experience_icons/WorkExperience.astro";
 ---
-<section class="">
-    <h1 class="text-3xl font-bold mt-10 mb-10">Experience</h1>
+<section class="mt-20">
+    <div class="flex items-end">
+        <WorkExperience />
+        <h1 class="text-3xl font-bold ml-4">Experience</h1>
+    </div>
 
-    <ol class="relative border-s border-red-950 dark:border-neutral-400">                  
+    <ol class="relative border-s border-red-950 dark:border-neutral-400 mt-6">                  
         <li class="mb-10 ms-4">
-            <Experience title="Cloud Microservices Developer" description="Backend developer" year="2023" />
+            <Experience title="Banco Popular de Costa Rica" description="Cloud Microservices Developer" year="2023" />
         </li>
         <li class="mb-10 ms-4">
-            <Experience title="Mobile Developer" description="App" year="2022" />
-        </li>
-        <li class="ms-4">
-            <Experience title="Banco Popular de Costa Rica" description="Backend developer" year="2022"  />
+            <Experience title="Asada Santiago Sur" description="App Mobile" year="2022" />
         </li>
     </ol>
     
