@@ -8,10 +8,10 @@ interface Props {
 const {description,  title, year} = Astro.props;
 ---
 
-<div class="absolute w-3 h-3 bg-black rounded-full -start-1.5 border border-white dark:border-gray-900 dark:bg-lime-400">
+<div class="absolute w-3 h-3 bg-green-400 rounded-full -start-1.5 border border-white dark:border-gray-900 dark:bg-lime-400">
 </div>
 
-<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+<time class="mb-1 text-sm font-normal leading-none text-dark dark:text-white">
     {year}
 </time>
 
@@ -19,7 +19,7 @@ const {description,  title, year} = Astro.props;
     {title}
 </h2>
 
-<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+<p class="mb-4 text-base font-normal text-gray-800 dark:text-yellow-200">
     {description}
 </p>
 <!-- 

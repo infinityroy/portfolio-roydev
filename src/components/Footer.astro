@@ -1,7 +1,23 @@
 <section class="mt-8 mb-8">
     <footer class="bg-gray-300 dark:bg-slate-500 mb-24 text-white py-4 text-center rounded">
         <div class="container mx-auto dark:text-gray-50 text-black">
-          <p>© <script type="text/javascript">document. write( new Date(). getFullYear() );</script> Roy. Todos los derechos reservados.</p>
+          <p>© <span id="currentYear"></span> Roy. Todos los derechos reservados.</p>
         </div>
-      </footer>
+    </footer>
 </section>
+
+
+
+<script>
+  // Get the current year
+  let currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+
+  // Find the element with the id "currentYear"
+  let currentYearElement = document.getElementById("currentYear");
+
+  // Update the content of the element with the current year
+  currentYearElement == null ? 
+    console.error('Error getting current year') : currentYearElement.textContent = currentYear.toString();
+  
+</script>
